@@ -1,6 +1,6 @@
 # Plan de documentación — ContaNegocios
 
-> **Nombre provisional.** Versión 0.1 · 13 de octubre de 2026 · Autor: Danny Dulcey (GitHub: dante513)
+> **Nombre provisional.** Versión 0.7 · 17 de octubre de 2026 · Autor: Danny Dulcey (GitHub: dante513)
 
 ## 1. Propósito
 
@@ -33,7 +33,7 @@ ContaNegocios/
 │   │   └── 06-wireframes.md
 │   ├── 03-desarrollo/
 │   │   ├── 01-guia-de-desarrollo.md
-│   │   └── adr/                          (decisiones de arquitectura)
+│   │   └── 02-plan-f1.md
 │   ├── 04-pruebas/
 │   │   ├── 01-plan-de-pruebas.md
 │   │   ├── 02-casos-de-prueba.md
@@ -59,14 +59,24 @@ ContaNegocios/
 |---|---|---|---|
 | Análisis | Visión y alcance | ✏️ Borrador 0.1 | — |
 | Análisis | Requisitos (RF/RNF) | ✏️ Borrador 0.1 | Visión |
-| Análisis | Parámetros anuales y actualización | ✏️ Borrador 0.1 | Requisitos |
-| Análisis | Historias de usuario | ⏳ Pendiente | Requisitos |
-| Análisis | Glosario contable | ⏳ Pendiente | — |
-| Análisis | Reglas de negocio (con fuente normativa) | ⏳ Pendiente | Parámetros |
-| Diseño | Arquitectura, modelo ER, UML, API, seguridad, wireframes | ⏳ Pendiente | Análisis |
-| Desarrollo | Guía de desarrollo y ADR | ⏳ Pendiente | Diseño |
-| Pruebas | Plan, casos y pruebas de seguridad | ⏳ Pendiente | Diseño |
-| Despliegue | Instalación, respaldo, actualización anual | ⏳ Pendiente | Desarrollo |
+| Análisis | Parámetros anuales y actualización | ✏️ Borrador 0.2 | Requisitos |
+| Análisis | Historias de usuario | ✏️ Borrador 0.1 | Requisitos |
+| Análisis | Glosario contable | ✏️ Borrador 0.1 | — |
+| Análisis | Reglas de negocio (con fuente normativa) | ✏️ Borrador 0.1 | Parámetros |
+| Diseño | Arquitectura | ✏️ Borrador 0.1 | Análisis |
+| Diseño | Modelo de datos (ER) | ✏️ Borrador 0.2 | Análisis |
+| Diseño | API | ✏️ Borrador 0.1 | Arquitectura, modelo de datos |
+| Diseño | Seguridad | ✏️ Borrador 0.1 | Arquitectura, API |
+| Diseño | Diagramas UML | ✏️ Borrador 0.1 | Arquitectura, modelo de datos |
+| Diseño | Wireframes | ✏️ Borrador 0.1 | Requisitos, API |
+| Desarrollo | Guía de desarrollo | ✏️ Borrador 0.1 | Diseño |
+| Desarrollo | Plan de la fase F1 | ✏️ Borrador 0.1 | Guía de desarrollo |
+| Pruebas | Plan de pruebas | ✏️ Borrador 0.1 | Requisitos, reglas |
+| Pruebas | Casos de prueba | ✏️ Borrador 0.1 | Plan de pruebas |
+| Pruebas | Pruebas de seguridad | ✏️ Borrador 0.1 | Seguridad |
+| Despliegue | Instalación local | ✏️ Borrador 0.1 (se confirma con el código) | Arquitectura |
+| Despliegue | Respaldo y restauración | ✏️ Borrador 0.1 | Instalación |
+| Despliegue | Actualización anual | ✏️ Borrador 0.1 | Parámetros |
 | Usuario | Manuales por rol | ⏳ Pendiente | Desarrollo |
 
 ## 4. Orden de trabajo
@@ -99,7 +109,7 @@ ContaNegocios/
 
 | # | Decisión | Opciones | Estado |
 |---|---|---|---|
-| 1 | Nombre definitivo | ContaNegocios u otro | Abierta |
-| 2 | Base de datos | PostgreSQL (coherente con FerreControl) o SQLite (instalación más simple) | Abierta |
+| 1 | Nombre definitivo | Se mantiene ContaNegocios; el cambio, si se hace, será al final | Aplazada (17-oct-2026) |
+| 2 | Base de datos | PostgreSQL (rigidez e integridad para datos contables; ya conocida) | Decidida (17-oct-2026) |
 | 3 | Alcance de nómina en v1 | Núcleo desde la fase 4 (propuesto) | Propuesta |
 | 4 | Empresas (personas jurídicas) | Fuera de v1, diseño preparado para agregarlas | Acordada |

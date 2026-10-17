@@ -1,6 +1,6 @@
 # Parámetros anuales y actualización
 
-> Versión 0.1 · 13-oct-2026 · Fecha de verificación de las fuentes: 13-oct-2026
+> Versión 0.2 · 17-oct-2026 · Fecha de verificación de las fuentes: 13 y 17-oct-2026
 
 ## 1. Principio
 
@@ -30,16 +30,17 @@ Un parámetro activo nunca se sobrescribe: se cierra con `vigente_hasta` y se cr
 |---|---|---|---|
 | `UVT` 2025 | $49.799 | Siigo; Gerencie | ✅ |
 | `UVT` 2026 | $52.374 | Siigo | ✅ |
-| `RENTA_TOPE_INGRESOS` | 1.400 UVT (≈ $69.719.000 para el año gravable 2025) | Publimetro, 30-jun-2026 | ✅ |
+| `RENTA_TOPE_INGRESOS` | 1.400 UVT ($69.718.600 con UVT 2025) | Publimetro, 30-jun-2026; Rankia | ✅ |
 | `RENTA_TOPE_TARJETA` | 1.400 UVT | Publimetro, 30-jun-2026 | ✅ |
 | `RENTA_TOPE_COMPRAS` | 1.400 UVT | Publimetro, 30-jun-2026 | ✅ |
-| `RENTA_TOPE_PATRIMONIO` | Por confirmar | DIAN (micrositio de renta personas naturales) | ❓ |
-| `RENTA_TOPE_CONSIGNACIONES` | Por confirmar | DIAN | ❓ |
+| `RENTA_TOPE_PATRIMONIO` | 4.500 UVT ($224.095.500 con UVT 2025), a 31 de diciembre | Cronista (cita a la DIAN); Rankia; Accounter | ✅ |
+| `RENTA_TOPE_CONSIGNACIONES` | 1.400 UVT ($69.718.600 con UVT 2025) | Cronista; Rankia; Accounter | ✅ |
+| `RENTA_TOPE_OPERADOR` | Por tope: `>=` o `>` (las fuentes difieren en la frontera; ver RN-12 en `06`) | Estatuto Tributario | ⚠️ |
 | `EXOGENA_TOPE_INGRESOS_PN` | 11.800 UVT de ingresos brutos | Gerencie, citando la Res. DIAN 227 de 2025 | ✅ |
 | `EXOGENA_TOPE_RENTAS_CAPITAL_PN` | 2.400 UVT de rentas de capital o no laborales | Gerencie, citando la Res. DIAN 227 de 2025 | ✅ |
 | `GMF_EXENCION_MENSUAL` | 350 UVT por mes | Art. 879 ET (según Tributi, Gerencie) | ✅ |
 | `GMF_DEDUCCION_RENTA` | 50% del GMF pagado | Tributi (art. 115 ET) | ✅ |
-| `RENTA_CALENDARIO` | Fechas por últimos dígitos del documento | DIAN | ⚠️ Las fuentes difieren (23 vs 26 de octubre de 2026 como cierre); tabla editable |
+| `RENTA_CALENDARIO` | 12-ago a 26-oct-2026, por los dos últimos dígitos del documento | Rankia; Publimetro | ⚠️ Siigo indica 23-oct como cierre; tabla editable, confirmar en la DIAN |
 | `EXOGENA_FORMATOS` | Lista de formatos y versión por año gravable | Res. DIAN 227/2025 y sus modificaciones (ver nota) | ⚠️ |
 | `RENTA_TARIFA` | Tabla de tarifas por rangos en UVT | Estatuto Tributario | ❓ |
 
@@ -105,7 +106,7 @@ Hay que distinguir dos años: el **año gravable** (el que se declara) y el **a�
 | Dato | Fuente | Enlace |
 |---|---|---|
 | UVT 2025 y 2026 | Siigo | https://www.siigo.com/blog/contador/declaracion-de-renta-todo-lo-que-debes-saber/ |
-| Topes de renta, AG 2025 | Publimetro, 30-jun-2026 | https://www.publimetro.co/noticias/2026/06/30/esta-entre-los-7-millones-la-dian-confirma-las-fechas-y-topes-para-declarar-renta-este-ano/ |
+| Topes de renta, AG 2025 | Publimetro, 30-jun-2026; Rankia; Cronista; Accounter | https://www.publimetro.co/noticias/2026/06/30/esta-entre-los-7-millones-la-dian-confirma-las-fechas-y-topes-para-declarar-renta-este-ano/ |
 | Topes de exógena para personas naturales | Gerencie | https://www.gerencie.com/contribuyentes-obligados-a-presentar-informacion-exogena.html |
 | Modificaciones de exógena | INCP (jul-2026); Crowe (abr-2026); KPMG (14-nov-2025) | https://incp.org.co/publicaciones/infoincp-publicaciones/impuestos/2026/07/dian-ajusto-formatos-y-amplio-plazos-para-informacion-exogena-del-ano-gravable-2025/ |
 | GMF y deducción del 50% | Tributi; Gerencie | https://www.tributi.com/blog/impuestos/posts/como-descontar-el-4x1-000-en-la-declaracion-de-renta |

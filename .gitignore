@@ -1,0 +1,26 @@
+# Dependencias y compilados
+node_modules/
+dist/
+build/
+coverage/
+
+# Secretos y configuración local: NUNCA al repositorio
+.env
+.env.*
+!.env.example
+
+# Soportes subidos y respaldos
+uploads/
+respaldos/
+*.dump
+*.sql.gz
+
+# Registros
+*.log
+npm-debug.log*
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
